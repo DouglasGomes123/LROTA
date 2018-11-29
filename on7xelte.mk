@@ -10,7 +10,7 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="Click here to view latest changes">https://raw.githubusercontent.com/LiquidRemix-Devices/LROTA/pie/x00td_changelog.txt</ChangelogUrl>
+                description="Click here to view latest changes">https://raw.githubusercontent.com/DouglasGomes123/LROTA/pie/on7xelte_changelog.txt</ChangelogUrl>
             <OpenGappsUrl
             	id="open_gapps"
             	title="OpenGApps"
