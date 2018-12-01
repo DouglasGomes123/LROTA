@@ -1,1 +1,188 @@
-Test
+=======================
+     11-30-2018
+=======================
+
+
+   * frameworks/base/
+f88e46b Enable the home button to wake the screen
+d5e0b6b QS: Fix opacity after reboot
+cb92581 Avoid casting network traffic to StatusBarIconView to prevent crash
+ff24da7 NetworkTraffic: Fix gravity
+fb185a3 Only show bluetooth icon when connected && enabled
+de388be Revert "base: Allow to specify multicolor notification led support [1/2]"
+b544d42 Revert "Be more strict about triggering notification lights"
+98e48a2 Cleanup brightness slider toggle [1/2]
+be932ad WeatherProvider: Set default MetricUnit to Fahrenheit
+1cc7cc6 SystemUI: Implement weather on lockscreen
+20dd01a Revert OmniJaws [1/2]
+
+   * hardware/interfaces/
+9b01f2d [TEMP] graphics: libhwc2on1adapter: fix up layer handles
+
+   * packages/apps/LiquidLounge/
+3099149 Cleanup brightness slider toggle [2/2]
+5645656 Integrate Weather client [2/2]
+
+   * packages/apps/Settings/
+2c1f602 Revert "Settings: Allow to specify multicolor notification led support [2/2]"
+43913ae Settings: Hide notification light color preference if no multicolor led
+
+   * packages/apps/SmartNav/
+3c4afd1 SmartNav: Use correct colors for popup
+e8bed2a Smartbar: Update default dark icons color
+65c0b59 SmartNav: make smartbar home icon smaller
+8100983 Update Fling logo
+acc18e7 Adapt for our HW-Keys Utils
+
+   * packages/apps/SmartNavSettings/
+b596482 navsettings: initial liquid commit
+fbf3452 Pixel Navbar animation toggle [2/2]
+
+   * vendor/liquid/
+97f3a31 Update common.mk
+b18359d Update Android.mk
+daab9e2 Add files via upload
+
+=======================
+     11-29-2018
+=======================
+
+
+   * build/kati/
+0b3a353 Improve regen performance by setting cpu affinity
+22ff2ce Do not limit threads upon calling legacy GNU make
+
+   * frameworks/base/
+78e0d69 Fix NullpointException in NetworkPolicyManagerService
+dc21b79 Brightness slider + - buttons: use more granular values
+8992c06 base: Option to use volume keys to control ring volume anytime (1/2)
+6d420dc Preserve x18 while preloading SP-HALs in the zygote
+f3b87a8 Revert "base: Add MD2 style Switch"
+be09770 Revert "Themes: Fix issue applying themes with certain wallpapers / LWP"
+ca6e735 SettingsProvider: lowered animations duration
+74c77b0 hw-keys: enable powermenu on hwkeys actions
+0b3a57f Full gesture navbar: add haptic feedback to back action
+7c6b3f5 Full gestures nav: longpress to move keyboard cursors [1/2]
+4f4c3e9 Full nav gesture: don't trigger home when pressing rotation button
+965ea65 Fix notifications for some apps if Less notification sounds is enabled
+5e3c17e Update PageTypeInfoParser to be less restrictive.
+ea507a1 Check for null path in getInternalPathForUser
+712598d PowerMenu: add Screenrecord to the menu [1/2]
+6cc2228 Add progress for font apply [1/2]
+c77d7f5 Dynamic font fix for FDE devices
+5686d47 Fonts: patched a few need files for boot
+8ed6e59 Fonts: Update keyguard when font changes
+d13ee2b bringup: Fontservice
+07a2223 base: Volume dialog timeout (1/2)
+9940595 Prevent crash when multiple Screenshot request
+d6c39c6 Crash app on foreground service notification error
+5f22c3b Check the size of the ArrayList in ActivityManager.forceStopPackage()
+ad6096d Fw_base - Disable Immersive Messages [1/2]
+9723af0 base: Fix SB Clock showing up on reboot
+d31afbd Fw_base - Get the reboot menus to follow power menu animations previously merged
+f477505 Fw_base - Rotation anim to Power and reboot menu [1/2]
+3a1a2c3 Fw_base - Breathing missedcall/sms/voicemail [1/5]
+225d5fa FWBase: Add 7 more power menu animations [1/2]
+37d4b8c Power Menu animations [1/2]
+aa7b6fc Fix QS tile animations
+9ea7763 Lockscreen visualizer: fix SystemUI FC when using Pulse
+018fe28 Hide tiles title: longpress will launch detail view
+
+   * packages/apps/Launcher3/
+92ca9cf Revert "launcher3: Add rounded Recents"
+
+   * packages/apps/LiquidLounge/
+498cb30 Revert OmniJaws [2/2]
+c426a5b PowerMenu: add Screenrecord to the menu [2/2]
+77ab319 Option to use volume keys to control ring volume anytime (2/2)
+a3f8c1f Volume dialog timeout (2/2)
+67abf8e Disable Immersive Messages [2/2]
+e353835 Breathing missedcall/sms/voicemail [5/5]
+e8cdffe Rotation anim to Power and reboot menu [1/2]
+dfcd568 Power Menu animations [2/2]
+8d06f47 lounge: missing advanced doze settings
+
+   * packages/apps/Messaging/
+7fe9c50 MediaPicker: Check for NPE
+db3ec2d Messaging - Breathing missedcall/sms/voicemail [4/5]
+d562c44 Messaging: Fix crash of blocked participant list activity
+4546a16 Messaging: Don't crash on unsupported shared content type
+323c8a7 Messaging: fix bad recycle on sending two mms in a row
+a1b950d Use app settings for conversation settings if no custom set
+f532473 Messaging app crashes after a few MMS
+63aab3b Fixed storage permission issue for attachments
+560f87b Added support for video and audio mms attachments
+c2bf13d Play an audible notification on receiving a class zero message.
+2b4ded6 Messaging: Implement saved video attachments in MMS
+22b34fd Messaging: bring back accent color
+c11350a Messaging App is crashing when storage memory is full
+e8a7c9c Fix menu item highlight color.
+14a953c Messaging: Toggable keyboard emoticons access
+b873fb5 MessageQueue: Process pending messages per subscription
+ffeee95 Messaging: change Avatar fontFamily to sans-serif-medium
+0cebb5e Messaging: Implement option for swipe right to delete.
+4b40222 Messaging: adaptive icon
+e0d60b6 Messaging: define app category
+
+   * packages/apps/Settings/
+657b031 Remove QS activities for weather tile
+428abe9 Phone ringtone setting for Multi SIM device
+e6c41d1 Make Font Picker play nice with substratum
+2b6f9b1 Add progress for font apply [2/2]
+b93c3f5 Add Font preference for font manager
+e6b0f3f Full gestures nav: longpress to move keyboard cursors [2/2]
+
+   * packages/apps/SmartNavSettings/
+718b88b Pulse: add back color from album art preference
+
+   * system/sepolicy/
+620ec30 [3/3] sepolicy: add support for adb over network
+e30ec68 Fontservice: Add sepolicy
+
+   * vendor/liquid/
+8fc2ab5 vendor: Build WeatherProvider
+f52456e vendor: add more fonts
+47decd2 Make number of days to generate changelog configurable.
+2266f55 vendor: don't build email or jelly
+ffac419 vendor: Add back fonts
+
+=======================
+     11-28-2018
+=======================
+
+
+   * build/kati/
+0b3a353 Improve regen performance by setting cpu affinity
+22ff2ce Do not limit threads upon calling legacy GNU make
+
+   * device/liquid/sepolicy/
+021a5a2 Label lineage.service.adb.root as system prop
+
+   * frameworks/av/
+8cb578e stagefright: add changes related to high-framerates in CameraSource
+
+   * packages/apps/DeskClock/
+36bd7be DeskClock: Add support of power off alarm feature
+2f4e4a5 Google-ify the theme
+
+   * packages/providers/WeatherProvider/
+5da0b15 WeatherProvider: Declare playstore version in main /res
+
+   * packages/services/Telephony/
+43bb2bf services/Telephony - Breathing missedcall/sms/voicemail [3/5]
+
+   * device/qcom/sepolicy-legacy/
+1f252ed legacy: Resolve hal_bluetooth_default denial
+1aae57a legacy: Resolve hal_gnss_default denial
+2bd9a60 legacy: Label more power_supply sysfs
+25b6ab3 legacy: allow init to read /proc/device-tree
+fa38396 sepolicy: Fix SoftAP (hostapd)
+076e54c Remove wifi_data_file from data_between_core_and_vendor_violators
+53a0855 Add create_dir_perms to data files for vendor_init
+21d0c28 sepolicy: Allow hostapd to access/write /data/vendor/ partition
+11ff404 wifi: Use wpa_data_file instead of wifi_vendor_data_file
+
+=======================
+     11-24-2018
+=======================
+
