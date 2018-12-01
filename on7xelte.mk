@@ -10,7 +10,7 @@
                 <BuildUrl
                 id="Folder"
                 title="Folder"
-                description="Folder on7xelte">https://www.androidfilehost.com/?w=files&flid=286397/</FolderUrl>
+                description="Folder on7xelte">https://www.androidfilehost.com/?w=files&flid=286397</FolderUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
