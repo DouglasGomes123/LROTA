@@ -6,7 +6,7 @@
             <RomUrl
                 id="rom"
                 title="LiquidRemix"
-                description="Download latest build for on7xelte">https://sourceforge.net/projects/liquidremix-x00td/files/10.0/liquid_remix-10.0.2-20181128-OFFICIAL-X00T.zip/download</RomUrl>
+                description="Download latest build for on7xelte">https://androidfilehost.com/?fid=11410963190603863144/download</RomUrl>
                 <BuildUrl
                 id="Folder"
                 title="Folder"
