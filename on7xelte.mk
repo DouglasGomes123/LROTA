@@ -8,9 +8,9 @@
                 title="LiquidRemix"
                 description="Download latest build for on7xelte">https://sourceforge.net/projects/liquidremix-x00td/files/10.0/liquid_remix-10.0.2-20181128-OFFICIAL-X00T.zip/download</RomUrl>
                 <BuildUrl
-                id="build"
-                title="Build"
-                description="Folder on7xelte">https://www.androidfilehost.com/?w=files&flid=286397/</BuildUrl>
+                id="Folder"
+                title="Folder"
+                description="Folder on7xelte">https://www.androidfilehost.com/?w=files&flid=286397/</FolderUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
