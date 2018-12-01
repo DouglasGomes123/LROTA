@@ -2,11 +2,15 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Official>
         <on7xelte>
-            <Filename>10.0.2-20181128-OFFICIAL-X00T.zip</Filename>
+            <Filename>10.0.2-20181130-OFFICIAL-on7xelte.zip</Filename>
             <RomUrl
                 id="rom"
                 title="LiquidRemix"
-                description="Download latest build for x00td">https://sourceforge.net/projects/liquidremix-x00td/files/10.0/liquid_remix-10.0.2-20181128-OFFICIAL-X00T.zip/download</RomUrl>
+                description="Download latest build for on7xelte">https://sourceforge.net/projects/liquidremix-x00td/files/10.0/liquid_remix-10.0.2-20181128-OFFICIAL-X00T.zip/download</RomUrl>
+                <BuildUrl
+                id="build"
+                title="Build"
+                description="Folder on7xelte">https://www.androidfilehost.com/?w=files&flid=286397/</BuildUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
