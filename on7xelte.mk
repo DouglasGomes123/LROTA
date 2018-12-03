@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Official>
         <on7xelte>
-            <Filename>10.0.2-20181203-OFFICIAL-on7xelte.zip</Filename>
+            <Filename>10.0.2-20181130-OFFICIAL-on7xelte.zip</Filename>
             <RomUrl
                 id="rom"
                 title="LiquidRemix"
