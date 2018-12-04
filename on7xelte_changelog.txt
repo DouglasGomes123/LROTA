@@ -1,4 +1,258 @@
 =======================
+     12-04-2018
+=======================
+
+
+   * bionic/
+62fcd58 Merge tag 'android-9.0.0_r21' into pie
+4d9c1fa Actually restore pre-P mutex behavior
+
+   * build/make/
+80c3f62 Merge tag 'android-9.0.0_r21' into pie
+
+   * device/qcom/sepolicy/
+0aba9b4 Allow charger access to /mnt/vendor
+50c9e04 sepolicy: include liquid sepolicy
+
+   * frameworks/av/
+a563307 AAudioService: Set Audio dl parameters by system property
+c94560b AAudioService: Single thread exclusive to DL
+127f3a5 SchedulingPolicyService: DL policy request through Binder
+
+   * frameworks/base/
+1fe265c Enable the home button to wake the screen
+901a4c7 systemui: update navbar tile for smartnav
+01f0af2 base: remove deviceutils class import
+1868feb Merge tag 'android-9.0.0_r21' into pie
+b9ced57 FontService: fix potential NPE and handle disabled packages properly
+927a3a3 Full nav gesture: Poor Hack to Get Everything working
+f1a1884 Bluetooth: Fix NPE when accesing Manufacturer Data of invalid ScanRecord
+612c127 Recents: add pinch-in gesture on tasks to Clear All
+910b78f Recents: Allow closing empty view via tapping
+f7c5108 hwui: stability: check mmap return value
+526d7ae hwui: Fix a use-after-free found by HWAsan
+20312ab Preserve x18 while preloading SP-HALs in the zygote
+6017eec Move vendor blacklist overlays to ThemeAccentUtils
+2e87044 Ignore vendor overlays that must be on system/app
+fca8d7e base: UI Styles [1/3]
+cf8eeab Change swipe up gesture settings config [1/4]
+73cae18 Custom Icons handler: add launcher icon cache support
+87985a4 Stock Recents/Overview icon pack support [2/3]
+cc2a8de Revert "base: Add MD2 style Switch"
+8193358 Revert "Themes: Fix issue applying themes with certain wallpapers / LWP"
+7d14f13 Pulse: allow setting fading blocks opacity [1/3]
+7a4b789 Pulse: Add bar animation smoothing [1/3]
+405ac2a Add Pulse Lava Lamp start and end colors (1/3)
+203c19b Theme settings dashboard icons [1/3]
+c35ca72 Disable grid recents [1/2]
+606b207 Notification ticker: don't tick in do not disturb
+bbbd1fc Only show bluetooth icon when connected
+6366289 Support the perflock request from system/priv apps whose domain are untrusted
+5c78460 Add Game boost & modify launchboostv2 invocation.
+6145a0b Disable swipe boost and preferred apps for certain cases
+4eeb313 Fling/Pre-fling Boost: Call perf boost from System Server context
+06da20a BoostFramework: Clean up code
+385b982 IOP : Adding support for UXPerf Class
+17ca55b BoostFramework: Move property checks to pass sepolicy requirements.
+bd7f326 IOP/UXE: This change is to enable the IOP and UXE
+9bf2070 Precise new activity boost.
+4e95950 Reorder boosts for quick ramp up
+9036474 Add perf hint for screen rotation animation
+b1901e8c Add perf hint for rotation latency
+71ad1dc framework/base: add parallel verifyV1
+de20595 add perf_service into system_process.
+096deec BoostFramework: To Enhance performance.
+b5d9c7e base: featureize ro.recents.grid and Go Layout
+002cbcb Speed up the notification panel pulldown animation when called externally
+5974b28 Add kill button to notification guts [1/2]
+0daafc7 BatteryStats: Correct formatter for pkginst in battery stats.
+fb1c3ed Fix uid check error when activity is running in other process
+5cf4f67 Nullify the default wallpaper component if it does not exist
+5ee5337 Use brightness slider better values also for Settings brightness slider
+dd4409e base: support overlays in system
+638d61f Use fdeCheckPassword error code to indicate pw failure
+3218700 hwkeys: Fix sound search
+44b5ba6 hwkeys: Disable screenrecord
+86d9327 hwkeys: Enable partial screenshot
+554b5fb Fix and improve lockscreen visualizer
+2359e45 SmartNav: Implement pulse for stock navbar
+d61ea0b Initial checkin on Pie for SmartNav navigation suite [1/4]
+0cb84ef NavigationBar visible from DUI: Initial checkin for Oreo
+95a46d8 Revert "base: Add option to hide the navigation bar [1/2]"
+a683bc7 Added toast when a screenshot is deleted
+72ec047 Revert "base: Allow to specify multicolor notification led support [1/2]"
+cd5bbf5 Revert "Be more strict about triggering notification lights"
+5b5ea3f Cleanup brightness slider toggle [1/2]
+c486b25 WeatherProvider: Set default MetricUnit to Fahrenheit
+8b722d1 SystemUI: Implement weather on lockscreen
+13407d8 Revert OmniJaws [1/2]
+aa9402a Fix NullpointException in NetworkPolicyManagerService
+3b59284 Brightness slider + - buttons: use more granular values
+0f8a452 base: Option to use volume keys to control ring volume anytime (1/2)
+ca7515d hw-keys: enable powermenu on hwkeys actions
+a6f22fd Full gesture navbar: add haptic feedback to back action
+71a1bb8 Full gestures nav: longpress to move keyboard cursors [1/2]
+da3a8e5 Fix notifications for some apps if Less notification sounds is enabled
+
+   * frameworks/native/
+bed3d17 Merge tag 'android-9.0.0_r21' into pie
+
+   * hardware/interfaces/
+4296e97 [TEMP] graphics: libhwc2on1adapter: fix up layer handles
+
+   * packages/apps/Bluetooth/
+7e17f5b Merge tag 'android-9.0.0_r21' into pie
+
+   * packages/apps/LiquidLounge/
+2baa257 Stock Recents/Overview icon pack support [3/3]
+508c689 Add translations from Brazil
+
+   * packages/apps/LiquidOTA/
+51f41af Add translations from Brazil
+
+   * packages/apps/Settings/
+0b34a8b Settings: Move Notch settings to display
+55b845c settings: UI Styles [2/3]
+c875bcd Change swipe up gesture settings config [2/4]
+
+   * system/bt/
+cbd9cd6 Merge tag 'android-9.0.0_r21' into pie
+
+   * system/core/
+dd1377b set permissions on /system/addon.d/ and files within.
+357ffe2 DO NOT MERGE: lmkd: retune rate at which processes are killed
+d2be658 lmkd: rate-limit and cleanup failed kill reports
+589694d init: No fsck for /data and /cache when shutdown
+a6e9f82 init: Cleanly exit subcontext processes upon init's death
+43ab337 init.rc: don't start console unless asked to
+21bf8b7 libpixelflinger: Avoid using x18 register in blend implementation
+973ce88 init.rc: Show bootanimation after decrypt
+
+   * system/vold/
+3c34c31 Merge tag 'android-9.0.0_r21' into pie
+
+   * vendor/liquid/
+c8cd4fe vendor: build ims with caf telephony
+dc864bf vendor: enable all wifi displays
+6c647ef vendor: update our default build props
+2417640 vendor: disable all adb authentication
+44d881d vendor: UI Styles [3/3]
+5c0f254 Change swipe up gesture settings config [4/4]
+3386dce Add application for Wallpapers (LiquidPapers)
+
+=======================
+     12-03-2018
+=======================
+
+
+   * frameworks/base/
+22f0e2d Update PageTypeInfoParser to be less restrictive.
+cdcf1d2 Check for null path in getInternalPathForUser
+db8b9ef PowerMenu: add Screenrecord to the menu [1/2]
+95d763f Add progress for font apply [1/2]
+bfe4c43 Dynamic font fix for FDE devices
+e2ba593 Fonts: patched a few need files for boot
+e964635 Fonts: Update keyguard when font changes
+4882af0 bringup: Fontservice
+6f601f3 base: Volume dialog timeout (1/2)
+5ca4295 Prevent crash when multiple Screenshot request
+13dfa67 Crash app on foreground service notification error
+369dcb9 Check the size of the ArrayList in ActivityManager.forceStopPackage()
+75459f8 Fw_base - Disable Immersive Messages [1/2]
+e5716c7 Fw_base - Get the reboot menus to follow power menu animations previously merged
+af14a8a Fw_base - Rotation anim to Power and reboot menu [1/2]
+70970fc Fw_base - Breathing missedcall/sms/voicemail [1/5]
+65522a2 FWBase: Add 7 more power menu animations [1/2]
+76fb594 Power Menu animations [1/2]
+0eaa986 Fix QS tile animations
+e85ed60 Lockscreen visualizer: fix SystemUI FC when using Pulse
+e7caed7 Hide tiles title: longpress will launch detail view
+
+   * packages/apps/Launcher3/
+de1517e Import proper utils
+480f808 Swipe down to show notifications panel
+299542f Add double tap to sleep gesture
+3bd9347 Use View.getHeight() instead of Canvas.getHeight() for PageIndicatorDots
+8215ec3 Change swipe up gesture settings config [3/4]
+8c668c4 Update prebuilt shared lib from our Systemui tree source
+
+   * packages/apps/LiquidLounge/
+e1d1c0d Disable grid recents [2/2]
+8129cb6 Disable recents settings if using quickstep
+f6a796a settings: featureize ro.recents.grid and Go Layout [2/2]
+8ee64a3 Add kill button to notification guts [2/2]
+105357b Initial checkin on Pie for SmartNav navigation suite [3/4]
+3035069 Cleanup for SmartNav
+fec3aea Cleanup brightness slider toggle [2/2]
+0cff69d Integrate Weather client [2/2]
+b861ef6 Revert OmniJaws [2/2]
+ddf8fb5 PowerMenu: add Screenrecord to the menu [2/2]
+6f7e4cb Option to use volume keys to control ring volume anytime (2/2)
+f0561fa Volume dialog timeout (2/2)
+4d48095 Disable Immersive Messages [2/2]
+02d6dff Breathing missedcall/sms/voicemail [5/5]
+95c3a39 Rotation anim to Power and reboot menu [1/2]
+464f142 Power Menu animations [2/2]
+7667614 lounge: missing advanced doze settings
+
+   * packages/apps/Settings/
+a89f30a Theme settings dashboard icons [3/3]
+565a05f Theme settings dashboard icons [2/3]
+9b3361e Settings: We use RECENTS_LAYOUT_STYLE for Pie Recents Check
+6b78eb9 Initial checkin for SmartNav navigation suite [2/4]
+
+   * packages/apps/SmartNav/
+8c23fe4 Smartbar: Code smart
+4322fa9 Pulse: allow setting fading blocks opacity [2/3]
+17a10a6 Pulse: Add bar animation smoothing [2/3]
+a669925 Add Pulse Lava Lamp start and end colors (2/3)
+7f72ae2 Fling: Reapply dark intensity when toggling logo
+f11624f SmartNav: Implement pulse for stock navbar
+050379c Smartbar: keep pressing on ime arrows to move kb cursor
+842c491 DUI: fix button custom image icon not being loaded on encrypted device
+33419d9 Improve fling icon
+cbccce3 Add delay while applying dark intensity
+68da23a Pulse: add back auto color based on albumart
+028fe1b Use offload thread (ExecutorService) to start pulsing
+bc36e57 Fix util imports
+
+   * packages/apps/SmartNavSettings/
+1d32d9e Pulse: allow setting fading blocks opacity [3/3]
+531b071 Pulse: Add bar animation smoothing [3/3]
+62d73ff Add Pulse Lava lamp start and end colors (3/3)
+c1c169b Pulse blacklist [2/2]
+da37c1a Move in some settings
+cccf2a6 Initial checkin for SmartNavSettings    *
+
+=======================
+     12-02-2018
+=======================
+
+
+   * packages/apps/Launcher3/
+8747fd4 Add back missing styles
+6b458d0 Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/packages/apps/Launcher3 into pie-new
+f850885 Elevate to 'core/platform' app'
+d13aea3 Add SearchLauncher target
+
+=======================
+     12-01-2018
+=======================
+
+
+   * packages/apps/Launcher3/
+36dd898 AllAppsSearchBox: use rounded corners
+7423330 Icons: don't wrap icons again when using an icon pack
+05cbccd Launcher drawer icon pack: use Recents icons engine
+81c4835 Revert "Workaround the Icon pack issue on adaptive apps"
+57714e4 Stock Recents/Overview icon pack support [1/3]
+0cce064 Revert "Launcher3: Quickstep needs to rely on System rounded corner radius"
+
+   * system/netd/
+835321c Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-gsi
+ab8ef3f Merge pi-qpr1-release PQ1A.181105.017.A1 to pi-platform-release am: c1e8496cc2
+
+=======================
      11-30-2018
 =======================
 
