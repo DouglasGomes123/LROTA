@@ -2,6 +2,7 @@ Liquid Remix 10.0.4-20190119-OFFICIAL for J7 Prime (on7xelte)
 
 
 General Changes :
+
 - January security patch
 - Ambient visualizer
 - Lockscreen clock and date styles
@@ -20,4 +21,5 @@ General Changes :
 - Fixed dt2s on status bar
 - Fixed signature spoofing
 - Added back auto brightness toggle to QS
+- Fixed Hostpot
 - And many more
