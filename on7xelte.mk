@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Official>
         <on7xelte>
-            <Filename>10.0.3-20181122-OFFICIAL-on7xelte.zip</Filename>
+            <Filename>10.0.4-20190119-OFFICIAL-on7xelte.zip</Filename>
             <RomUrl
                 id="rom"
                 title="LiquidRemix"
-                description="Download latest build for on7xelte">https://sourceforge.net/projects/liquid-remix/files/on7xelte/liquid_remix-10.0.3-20181222-OFFICIAL-on7xelte.zip/download</RomUrl>
+                description="Download latest build for on7xelte">https://sourceforge.net/projects/liquid-remix/files/on7xelte/liquid_remix-10.0.4-20190119-OFFICIAL-on7xelte.zip/download</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
